@@ -1,0 +1,60 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:15px 30px;
+  background:white;
+  border-bottom:1px solid #ddd;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  text-decoration:none;
+  color:black;
+}
+
+.nav-middle{
+  display:flex;
+  gap:10px;
+  flex:1;
+  justify-content:center;
+}
+
+.nav-middle input{
+  width:320px;
+  padding:8px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.nav-middle button{
+  padding:8px 15px;
+  background:black;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.nav-right a{
+  text-decoration:none;
+  color:black;
+  font-weight:500;
+}
+
+.login{
+  background:black;
+  color:white;
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
