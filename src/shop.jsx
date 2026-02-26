@@ -27,12 +27,9 @@ export const PRODUCTS = [
     price: 2599,
     image: "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&w=800",
   },
-  {
-    id: 5,
-    name: "Hoodie",
-    price: 2199,
-    image: "https://images.pexels.com/photos/6311592/pexels-photo-6311592.jpeg?auto=compress&w=800",
-  },
+
+  // ❌ HOODIE REMOVED
+
   {
     id: 6,
     name: "Sneakers",

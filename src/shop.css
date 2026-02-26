@@ -1,174 +1,108 @@
+/* RESET */
 *{
-
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
-
-font-family:Arial, Helvetica, sans-serif;
-
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
-
-
 
 body{
-
-background:#f8f9fa;
-
-color:#111;
-
+  background:#f8f9fa;
+  color:#111;
 }
 
-
-
+/* PAGE */
 .shopPage{
-
-padding:40px;
-
-min-height:100vh;
-
+  padding:40px;
+  min-height:100vh;
 }
 
-
-
+/* TITLE */
 .title{
-
-font-size:32px;
-
-margin-bottom:18px;
-
-color:black;
-
+  font-size:32px;
+  margin-bottom:20px;
+  color:black;
+  font-weight:bold;
 }
 
-
-
+/* GRID */
 .productsGrid{
-
-display:grid;
-
-grid-template-columns: repeat(3, 1fr);
-
-gap:20px;
-
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
 }
 
-
-
+/* CARD */
 .productCard{
-
-background:white;
-
-padding:15px;
-
-border-radius:10px;
-
-text-align:center;
-
-box-shadow:0 0 6px rgba(0,0,0,0.08);
-
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 0 8px rgba(0,0,0,0.08);
+  transition:0.3s;
 }
 
+.productCard:hover{
+  transform:translateY(-5px);
+}
 
-
+/* IMAGE */
 .productCard img{
-
-width:100%;
-
-height:200px;
-
-object-fit:cover;
-
-border-radius:6px;
-
-margin-bottom:10px;
-
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:10px;
 }
 
-
-
-/* PRODUCT NAME */
-
+/* NAME */
 .productCard h3{
-
-color:black;
-
-font-size:18px;
-
-margin-bottom:5px;
-
+  color:black;
+  font-size:18px;
+  margin-bottom:5px;
 }
-
-
 
 /* PRICE */
-
 .productCard p{
-
-color:#333;
-
-margin-bottom:10px;
-
+  color:#444;
+  margin-bottom:12px;
+  font-weight:bold;
 }
-
-
 
 /* BUTTON */
-
 .blackBtn{
-
-background:black;
-
-color:white;
-
-border:none;
-
-padding:10px 20px;
-
-border-radius:6px;
-
-cursor:pointer;
-
-font-weight:800;
-
+  background:black;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
 }
-
 
 .blackBtn:hover{
-
-background:#333;
-
+  background:#333;
 }
 
-
-
-/* MOBILE */
-
+/* TABLET */
 @media(max-width:900px){
 
-.productsGrid{
-
-grid-template-columns: repeat(2, 1fr);
-
-}
+  .productsGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
-
-
+/* MOBILE */
 @media(max-width:600px){
 
-.productsGrid{
+  .productsGrid{
+    grid-template-columns: 1fr;
+  }
 
-grid-template-columns: 1fr;
-
-}
-
-.shopPage{
-
-padding:18px;
-
-}
+  .shopPage{
+    padding:20px;
+  }
 
 }
