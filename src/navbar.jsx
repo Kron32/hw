@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ isLoggedIn, onLogout }) {
   return (
     <nav className="navbar">
-      <div className="nav-left">
-        <Link to="/" className="logo">MyShopNepal</Link>
-      </div>
+
+      <Link to="/" className="logo">MyShopNepal</Link>
 
       <div className="nav-middle">
         <input type="text" placeholder="Search products..." />
@@ -19,8 +18,16 @@ export default function Navbar() {
         <Link to="/shop">Shop</Link>
         <Link to="/cart">Cart</Link>
         <Link to="/contact">Contact</Link>
-        <button className="login">Login</button>
+
+        {isLoggedIn ? (
+          <button className="login" onClick={onLogout}>
+            Logout
+          </button>
+        ) : (
+          <Link to="/login" className="login">Login</Link>
+        )}
       </div>
+
     </nav>
   );
 }

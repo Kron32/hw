@@ -50,11 +50,19 @@
   font-weight:500;
 }
 
+/* 🔥 FIXED LOGIN BUTTON */
 .login{
   background:black;
-  color:white;
+  color:white !important;      
   padding:8px 15px;
-  border:none;
   border-radius:5px;
   cursor:pointer;
+  text-decoration:none;        
+  display:inline-block;        /* 🔥 proper button look */
+  font-weight:500;
+}
+
+/* 🔥 hover effect */
+.login:hover{
+  background:#333;
 }
